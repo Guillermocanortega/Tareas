@@ -1,0 +1,53 @@
+#!/bin/bash
+
+while true; do
+    clear
+    echo "Menú de Scripts"
+    echo "--------------"
+    echo "1. hola.sh"
+    echo "2. variables.sh"
+    echo "3. Uso de varibles.sh"
+    echo "4. Usodearrays"
+    echo "5. OtrosUsos.sh"
+    echo "6. Aritméticas.sh"
+    echo "7. Lógicas.sh"
+    echo "8. Condicionales.sh"
+    echo "9. comprobaciones.sh"
+    echo "10. estructura.sh"
+    echo "11. interaccion for.sh"
+    echo "12. while.sh"
+    echo "13. iteracion until.sh"
+    echo "14. select.sh"
+    echo "15. funciones.sh"
+    echo "16. librearias.sh"
+    echo "17. señales.sh"
+    echo "18. colores.sh"
+    echo "0.  Salir"
+
+    read -p "Selecciona una opción: " opcion
+
+    case $opcion in
+        1) ./hola mundo.sh ;;
+        2) ./variables.sh ;;
+        3) ./Uso de variables.sh ;;
+        4) ./Usodearrays.sh ;;
+        5) ./otrosusos.sh ;;
+        6) ./aritméticas.sh ;;
+        7) ./lógicas.sh ;;
+        8) ./condicionales.sh ;;
+        9) ./comprobaciones.sh ;;
+        10) ./estructura.sh ;;
+        11) ./interacion for.sh ;;
+        12) ./while.sh ;;
+        13) ./iteracion until.sh ;;
+        14) ./select.sh ;;
+        15) ./funciones.sh ;;
+        16) ./librerias.sh ;;
+        17) ./señales.sh ;;
+        18) ./colores.sh ;;
+        0)  echo "Saliendo..."; exit ;;
+        *)  echo "Opción no válida. Inténtalo de nuevo." ;;
+    esac
+
+    read -p "Presiona Enter para continuar..."
+done
